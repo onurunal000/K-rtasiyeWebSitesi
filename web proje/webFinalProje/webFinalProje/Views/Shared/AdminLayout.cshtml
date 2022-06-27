@@ -1,0 +1,336 @@
+﻿
+@{
+    ViewBag.Title = "AdminLayout";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İmdat Kırtasiyesi</title>
+
+    <link rel="stylesheet" href="~/Web/assets/css/main/app.css">
+    <link rel="stylesheet" href="~/Web/assets/css/main/app-dark.css">
+    <link rel="shortcut icon" href="~/Web/assets/images/logo/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="~/Web/assets/images/logo/favicon.png" type="image/png">
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                       
+                        <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 14.5c2.219 0 4-1.763 4-3.982a4.003 4.003 0 0 0-4-4.018c-2.219 0-4 1.781-4 4c0 2.219 1.781 4 4 4zM4.136 4.136L5.55 5.55m9.9 9.9l1.414 1.414M1.5 10.5h2m14 0h2M4.135 16.863L5.55 15.45m9.899-9.9l1.414-1.415M10.5 19.5v-2m0-14v-2" opacity=".3"></path><g transform="translate(-210 -1)"><path d="M220.5 2.5v2m6.5.5l-1.5 1.5"></path><circle cx="220.5" cy="11.5" r="4"></circle><path d="m214 5l1.5 1.5m5 14v-2m6.5-.5l-1.5-1.5M214 18l1.5-1.5m-4-5h2m14 0h2"></path></g></g></svg>
+                            <div class="form-check form-switch fs-6">
+                                <input class="form-check-input  me-0" type="checkbox" id="toggle-dark">
+                                <label class="form-check-label"></label>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m17.75 4.09l-2.53 1.94l.91 3.06l-2.63-1.81l-2.63 1.81l.91-3.06l-2.53-1.94L12.44 4l1.06-3l1.06 3l3.19.09m3.5 6.91l-1.64 1.25l.59 1.98l-1.7-1.17l-1.7 1.17l.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95l2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85c-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14c.4-.4.82-.76 1.27-1.08c.75-.53 1.93.36 1.85 1.19c-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82c-2.81 3.14-2.7 7.96.31 10.98c3.02 3.01 7.84 3.12 10.98.31Z"></path></svg>
+                        </div>
+                        <div class="sidebar-toggler  x">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+
+                        <li class="sidebar-item  ">
+                            <a href="/Galeri/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Galeri</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="/Urun/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Ürün</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="/Satis/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Satis</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="/Personel/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Personel</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="/Login/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Login</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="/Kategori/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Kategori</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="/Kargo/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Kargo</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="/İstatistik/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>İstatistik</span>
+                            </a>
+                        </li>
+                       
+                        <li class="sidebar-item  ">
+                            <a href="/Fatura/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Fatura</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="/error/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>error</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="/Departman/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Departman</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="/CariPanel/Index/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>CariPanel</span>
+                            </a>
+                        </li>
+
+
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <section class="section">
+                    @RenderBody()
+                </section>
+            </div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2021 &copy; İmdat Kırtasiye</p>
+                    </div>
+                    <div class="float-end">
+                        <p>
+                            Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a href="https://saugi.me">Saugi</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="~/Web/assets/js/app.js"></script>
+
+</body>
+
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Static Navigation - SB Admin</title>
+    <link href="~/Web/dist/css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">İMDAT KIRTASİYESİ</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#">
+            <i class="fas fa-bars"></i>
+        </button>--><!-- Navbar Search-->
+        <!--<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>-->
+        <!-- Navbar-->
+        <!--<ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Core</div>
+                        <a class="nav-link" href="/Kategori/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Kategoriler
+                        </a>
+
+                        <a class="nav-link" href="/Urun/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-flask"></i></div>
+                            Ürünler
+                        </a>
+
+                        <a class="nav-link" href="/Departman/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-bars"></i></div> Departmanlar
+                        </a>
+
+                        <a class="nav-link" href="/Cari/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div> Cariler
+                        </a>
+
+                        <a class="nav-link" href="/Personel/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-street-view"></i></div> Personeller
+                        </a>
+
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-lock"></i></div>
+                            Admin
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+
+
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                    Yetkilendirme
+                                    <div class=”sb-sidenav-collapse-arrow”><i class=”fas fa-angle-down”></i></div>
+                                </a>
+
+                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="~/login/Index">Giriş Yap</a><a class="nav-link" href="register.html">Kayıt Ol</a><a class="nav-link" href="password.html">Şifremi Unuttum</a></nav>
+                                </div>
+
+                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                    Hata Sayfaları
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+
+                                <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="401.html">401 Page</a><a class="nav-link" href="404.html">404 Page</a><a class="nav-link" href="500.html">500 Page</a></nav>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="sb-sidenav-menu-heading">RAPOR VE FATURALAR</div>
+                        <a class="nav-link" href="/Satis/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-calendar"></i></div> Satışlar
+                        </a>
+                        <a class="nav-link" href="/Fatura/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-calendar"></i></div>Faturalar
+                        </a>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-plane"></i></div>
+                            Fatura Kalem
+                        </a>
+
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-plane"></i></div>
+                            Giderler
+                        </a>
+
+                        <a class="nav-link" href="/Satis/UrunListele/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-plane"></i></div>
+                            PDF - Excel
+                        </a>
+
+                        <a class="nav-link" href="/İstatistik/Index">
+                            <div class="sb-nav-link-icon"><i class="fas fa-plane"></i></div>
+                            İstatislikler
+                        </a>
+
+                        <a class="nav-link" href="/UrunDetay/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-plane"></i></div>
+                            Ürün Detay Sayfası
+                        </a>
+
+                        <a class="nav-link" href="/İstatistik/KolayTablolar/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-car"></i></div>
+                            Hızlı Bakış
+                        </a>
+
+                        <a class="nav-link" href="/Galeri/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-plane"></i></div>Galeri
+                        </a>
+
+                        <a class="nav-link" href="/Kargo/Index/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-gift"></i></div>
+                            Kargolar
+                        </a>
+
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
+                    Start Bootstrap
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content" class="p-5">
+            <main>
+              
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Your Website 2019</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="~/Web/dist/js/scripts.js"></script>
+</body>
+</html>-->
+
+

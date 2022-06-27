@@ -1,0 +1,35 @@
+﻿@using webFinalProje.Models.siniflar
+@model List<Personel>
+@{
+	ViewBag.Title = "Index";
+	Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>Personel Listesi</h2>
+<br />
+<table class="table table-striped">
+	<tr>
+		<th>ID</th>
+		<th>Personel Ad</th>
+		<th>Personel Soyad</th>
+		<th>Gorsel</th>
+		<th>Departman</th>
+		<th>Guncelle</th>
+		<th>Satislar
+		<th>
+	</tr>
+	@foreach (var x in Model)
+	{
+		<tr>
+			<td>@x.Personelid</td>
+			<td>@x.PersonelAd</td>
+			<td>@x.PersonelSoyad</td>
+			<td><img src="@x.PersonelGorsel" style="width:100px; height:50px;" /></td>
+			<td>@x.Departman.DepartmanAdi</td>
+			<td> <a href="/Personel/PersonelGetir/@x.Personelid" class=" btn btn-warning">Güncelle</a></td>
+            <td><a href="/Departman/DepartmanPersonelSatıs/@x.Personelid" class=" btn btn-default" style="background-color:lightcoral">Detaylar</a></td>
+		</tr>
+	}
+</table>
+<a href="/Personel/PersonelEkle" class="btn btn-primary">Personel Ekle</a>
+
